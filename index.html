@@ -5,8 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>EQ-Designs | Eng/Muhammed Abd Al-Kader</title>
 <meta name="description" content="ادفع للمهندس محمد عبد القادر عبر InstaPay أو فودافون كاش">
-<meta name="theme-color" content="#211a15">
-<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#ece3d4">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ar_EG">
 <meta property="og:title" content="Eng/Muhammed Abd Al-Kader">
@@ -25,7 +24,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel:wght@500;600&family=Marcellus&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <style>
 :root{
-  color-scheme:dark;
   --umber:#2a2019;      /* walnut-umber text */
   --bg:#ece3d4;         /* travertine base */
   --deep:#8a6a3c;       /* deep brass for text on light */
@@ -74,8 +72,8 @@ body{
 
 .inscr{fill:var(--deep);opacity:0;animation:fade .8s 2.9s ease forwards}
 .medal{fill:#fbf7ef;opacity:0;animation:fade .6s 1.3s ease forwards}
-.eq-line{fill:none;stroke:#2a2019;stroke-width:7;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s 1.75s cubic-bezier(.5,.1,.3,1) forwards}
-.eq-fill{fill:#2a2019;opacity:0;animation:fade .7s 2.9s ease forwards}
+.eq-line{fill:none;stroke:var(--umber);stroke-width:7;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s 1.75s cubic-bezier(.5,.1,.3,1) forwards}
+.eq-fill{fill:var(--umber);opacity:0;animation:fade .7s 2.9s ease forwards}
 @keyframes fade{to{opacity:1}}
 .glint{opacity:0;animation:glint 1.4s 3.2s ease-in-out forwards}
 @keyframes glint{0%{opacity:0;transform:translateX(-340px)}20%{opacity:.9}100%{opacity:0;transform:translateX(340px)}}
@@ -142,29 +140,6 @@ footer{margin-top:28px;font-family:var(--latin);font-size:12px;letter-spacing:.2
 .x{background:none;border:1px solid var(--oak);color:var(--ink);font:inherit;padding:8px 26px;border-radius:999px;cursor:pointer}
 .toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--umber);color:var(--travertine);padding:8px 18px;border-radius:999px;font-size:16px;opacity:0;transition:opacity .25s;pointer-events:none;z-index:10}
 .toast.show{opacity:1}
-
-/* ---------- Designed dark theme (for phones in dark mode) ---------- */
-@media all{ /* dark theme is now the default for everyone */
-  :root{--bg:#211a15;--umber:#efe6d6;--deep:#d9b97f;--muted:#bfae94}
-  html,body{background:#211a15}
-  body{background:
-    radial-gradient(120% 60% at 50% 0%, #3d2f23 0%, rgba(33,26,21,0) 62%),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='900' viewBox='0 0 600 900'%3E%3Cg fill='none' stroke='%23b8925a' stroke-opacity='.08' stroke-width='1.2'%3E%3Cpath d='M-20 120C120 160 160 60 300 110S520 240 640 180'/%3E%3Cpath d='M-20 420c90-30 170 60 280 20s210-110 380-40'/%3E%3Cpath d='M-20 700c140 40 230-40 340 10s190 90 300 40'/%3E%3C/g%3E%3C/svg%3E"),#211a15;
-    background-size:auto,600px 900px,auto}
-  .glow{background:radial-gradient(closest-side,rgba(226,201,155,.30),rgba(226,201,155,0))}
-  .ln{stroke:#c9a368}.ln.fine{stroke:#e2c99b}
-  .opt{background:linear-gradient(180deg,rgba(232,221,203,.07),rgba(232,221,203,.03));border-color:rgba(184,146,90,.5);box-shadow:none}
-  .opt:hover{background:rgba(232,221,203,.1);border-color:#e2c99b}
-  .opt .ic{background:#e8ddcb;color:#211a15}
-  .vf-panel{background:rgba(0,0,0,.2);border-color:rgba(184,146,90,.35)}
-  .amount{background:rgba(0,0,0,.18);border-color:rgba(184,146,90,.35)}
-  .amount input{background:#2c231c;color:#efe6d6;border-color:rgba(184,146,90,.5)}
-  .btn.ghost{border-color:rgba(184,146,90,.6)}
-  .ig{background:rgba(232,221,203,.05);border-color:rgba(184,146,90,.5)}
-  .ig:hover{background:rgba(232,221,203,.1)}
-  footer{color:rgba(207,192,168,.45)}
-  .toast{background:#e8ddcb;color:#211a15}
-}
 
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
