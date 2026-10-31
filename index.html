@@ -5,9 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>EQ-Designs | Eng/Muhammed Abd Al-Kader</title>
 <meta name="description" content="ادفع للمهندس محمد عبد القادر عبر InstaPay أو فودافون كاش">
-<meta name="theme-color" content="#ece3d4">
-<meta name="color-scheme" content="light dark">
-<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#211a15">
+<meta name="theme-color" content="#211a15">
+<meta name="color-scheme" content="dark">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ar_EG">
 <meta property="og:title" content="Eng/Muhammed Abd Al-Kader">
@@ -26,7 +25,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel:wght@500;600&family=Marcellus&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <style>
 :root{
-  color-scheme:light dark;
+  color-scheme:dark;
   --umber:#2a2019;      /* walnut-umber text */
   --bg:#ece3d4;         /* travertine base */
   --deep:#8a6a3c;       /* deep brass for text on light */
@@ -145,7 +144,7 @@ footer{margin-top:28px;font-family:var(--latin);font-size:12px;letter-spacing:.2
 .toast.show{opacity:1}
 
 /* ---------- Designed dark theme (for phones in dark mode) ---------- */
-@media (prefers-color-scheme:dark){
+@media all{ /* dark theme is now the default for everyone */
   :root{--bg:#211a15;--umber:#efe6d6;--deep:#d9b97f;--muted:#bfae94}
   html,body{background:#211a15}
   body{background:
